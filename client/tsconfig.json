@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./", // cette ligne est importante, elle indique à TypeScript où chercher les modules
+    "paths": {
+      "@/*": ["src/components/*"] // correspond à l'alias défini dans vite.config.ts
+    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
